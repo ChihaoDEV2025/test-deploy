@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap; /* Xếp các nút theo hàng */
+  align-items: flex-start; /* Đưa sát trái */
+  justify-content: flex-start; /* Hoặc justify-content: flex-end; để sát phải */
+  margin: 20px;
+  gap: 5px; /* Khoảng cách giữa các nút */
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:nth-child(even) {
+  background-color: red;
+  color: white;
+}
+
+button:nth-child(odd) {
+  background-color: white;
+  color: black;
+}
